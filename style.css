@@ -1,0 +1,91 @@
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+  
+}
+
+.card{
+    width:100%;
+}
+
+.bg-overlay {
+    color:white;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("record.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 400px;
+    padding-top: 50px;
+}
+
+
+.album-review{
+    text-align:center;
+    background-color:black;
+    color:white;
+}
+
+
+
+.album-container:hover{
+    transform: scale(1.05);
+    transition: 750ms;
+    border-radius:3px;
+}
+
+.album-cover{
+    box-shadow: .5px 2px 4px rgba(190, 190, 190, .5);
+}
+
+
+.navbar{
+
+    background-color:rgb(0,0,0);
+    
+}
+
+.navbar-brand{
+    font-family:arial;
+    font-size:3em;
+    letter-spacing: .1em;
+}
+
+
+.album-genre,
+.album-duration{
+    color:rgb(190, 190, 190);
+    font-size:small;
+} 
+
+.album-artist{
+    color:#dc3545;
+}
+
+
+
+
+.bg-overlay-1 {
+    color:white;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("stage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 400px;
+    padding-top: 50px;
+}
+
+
+
+/* .bg-img{
+    height:768px;
+}
+ */
+
+
+
+

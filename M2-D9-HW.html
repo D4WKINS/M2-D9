@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0433)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/758820329350704.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210401%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210401T121601Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27D9.html&X-Amz-Signature=cef0e449f6f5bb47929a87e5a7d538748d2b6bb5ad4d9916dbd6af339f7f9961 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and submitted the GitHub link on Eduflow before 17:00
+- You can google / use StackOverflow BUT we suggest you to use just the material provided
+- To test the page, just open it with your default browser.
+- Use Bootstrap4.6 classes to render the page.
+- Use containers and rows correctly in order to have a great display
+
+ASSIGNMENT TOPIC 
+You are creating a website to showcase your favourite albums.
+In this page you'd like to have a short bio of yourself, the top albums of your life, 
+the worst album you ever listen to and everything related to the music you love.
+
+IMPORTANT:
+Start from the previous Musical assignment project you've created on M2-D2
+
+NOTE:
+Most of the time, even the most expert designers, need inspiration.
+Spend some time surfing the web searching for the way of representing the albums that you like the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+    <style>
+      /* PREVIOUS STUFF */
+    </style>
+   
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+  <body>
+    <!-- EXERCISE 1
+        Use the specific bootstrap component to implement a Breadcrumb
+        -->
+       
+
+    <!-- EXERCISE 2
+            Create a Jumbotron section with a quick explanation / image of the website
+        -->
+
+        <div class="jumbotron jumbotron-fluid mb-0 bg-overlay d-flex flex-column justify-content-center" >
+             
+
+            <div class="container text-white">
+              <span class=" display-4 d-block font-weight-bold">Carls Playlist</span>
+              <nav aria-label="breadcrumb" class="mt-4">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+              </nav>
+              
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Favourites</li>
+                </ol>
+              </nav>
+              
+              <!-- <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol> -->
+       
+              </nav>
+            </div>
+          </div>
+
+        
+
+    <!-- EXERCISE 3
+            Foreach album in the favorite list, place the genre inside a badge
+        -->
+        <div class="container-fluid p-5 " style="background:rgb(10,10,10)" >
+            <span class="display-4 text-xs-center  text-light">Favourite</span>
+    
+             <div class=" card-deck p-lg-5 ">
+    
+        <div class="col-md-2 col-lg-3 mb-5 align-self-md-start">
+          <div class="card h-100">
+            <img src="cover-1.webp" class="card-img-top album-cover" alt="...">
+            <div class="card-body">
+                <h5 class="card-title album-title">Victory Lap</h5>
+                    <h4 class="album-artist">Nipsey Hussle</h4>
+                    <h6 class="album-genre"> Hip-Hop/Rap </h6>
+                    <h6 class="album-duration">1 Hour and 5 minutes</h6>
+                <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-2 col-lg-3 mb-5 ">
+            <div class="card h-100">
+              <img src="cover-2.webp" class="card-img-top album-cover" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title album-title">A love Letter To You 4</h5>
+                      <h4 class="album-artist">Trippie Redd</h4>
+                      <h6 class="album-genre"> Hip-Hop/Rap </h6>
+                      <h6 class="album-duration">58 minutes </h6>
+                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                  </div>
+              </div>
+          </div>
+    
+          <div class="col-md-2 col-lg-3 mb-5">
+            <div class="card h-100">
+              <img src="cover-3.webp" class="card-img-top album-cover" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title album-title">No Shame</h5>
+                      <h4 class="album-artist">Hopsin</h4>
+                      <h6 class="album-genre"> Rap/Hip Hop </h6>
+                      <h6 class="album-duration">1 Hour and 13 minutes </h6>
+                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                  </div>
+              </div>
+          </div>
+    
+          <div class="col-md-2 col-lg-3 mb-5">
+            <div class="card h-100">
+              <img src="cover-4.webp" class="card-img-top album-cover" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title album-title">Hybrid Theory</h5>
+                      <h4 class="album-artist">Linkin Park</h4>
+                      <h6 class="album-genre"> Rock, Hip-Hop/Rap  </h6>
+                      <h6 class="album-duration">49 minutes<h6>
+                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                  </div>
+              </div>
+          </div>
+    
+          <div class="col-md-2 col-lg-3 mb-5">
+            <div class="card h-100">
+              <img src="cover-5.webp" class="card-img-top album-cover" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title album-title">Phobia</h5>
+                      <h4 class="album-artist">Breaking Benjamin</h4>
+                      <h6 class="album-genre"> Rock </h6>
+                      <h6 class="album-duration">43 minutes </h6>
+                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                  </div>
+              </div>
+          </div>
+    
+    
+          <div class="col-md-2 col-lg-3 mb-5">
+            <div class="card h-100">
+              <img src="cover-6.webp" class="card-img-top album-cover" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title album-title">One-X</h5>
+                      <h4 class="album-artist">Three Days Grace</h4>
+                      <h6 class="album-genre"> Rock </h6>
+                      <h6 class="album-duration">4 minutes<h6>
+                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                  </div>
+              </div>
+          </div>
+    </div>
+    </div>
+    
+    <!-- EXERCISE 4
+            Foreach album in the favorite list, use the Bootstrap Card to contain it.
+            Use card layouts to format it in the best and more compatible way.
+        -->
+
+    <!-- EXERCISE 5
+            Place the tracklist inside a Bootstrap table.
+            The row column must be alternate.
+            Use one column for the track order, one of the title and one for the length.
+            (If you want, you can also add extra columns)
+        -->
+
+    <!-- EXERCISE 6
+            Add a DELETE bootstrap button on each row of the tracklist, with appropriate transitions on the various pseudo-class states 
+            which will apply for the subsequent button you'll use.
+            Clicking on the button the row must disappear. 
+            Add a fade-out effect using a CSS transition effect
+        -->
+
+    <!-- EXERCISE 7
+            Add a "Contact Me" form in the footer.
+            The "Contact Me" form has 2 fields:
+            - Email
+            - Text of the message
+            Use the correct Bootstrap styles for styling the buttons
+        -->
+
+    <!-- EXERCISE 8 
+            Add to the footer an extra column with the same links of the top nav.
+        -->
+
+    <!-- EXERCISE 9
+            Add a button "Add Track" under the track list the album, add a nice shadow transition when the button is hovered
+        -->
+
+    <!-- EXERCISE 10
+            On "Add Track" button, open a new modal.
+            The modal shall contain a form with:
+            - Track number
+            - Track name
+            - Track length
+            - Track featuring
+            - Live Track (checkbox)
+            The fields should be inside an Input Group and divided in 2 columns.
+        -->
+
+    <!-- EXERCISE 11
+            Add 2 bootstrap buttons at the bottom of the modal window:
+            - Close => clear the fields and close the modal
+            - Add => Add the track to the list of tracks in the main page and display an alert success message 
+            - The new list-element added to the list will appear with a fade-in transition effect
+            https://getbootstrap.com/docs/4.6/components/alerts/
+            [EXTRA] Make the message disappear after 5 seconds
+            https://www.w3schools.com/jsref/met_win_settimeout.asp
+        -->
+
+    <!-- EXERCISE 12
+            All the field (except for Feat. and Live Track) are required fields and requires validation.
+            If the user clicks on the Add button and some fields are empty, a warning alert must be show
+        -->
+
+    <!-- ############### -->
+    <!-- ###  EXTRA  ### -->
+    <!-- ############### -->
+
+    <!-- EXERCISE 13
+            For each "Album cover" in your page, add a tooltip with the title
+        -->
+
+    <!-- EXERCISE 14
+            Update the header and footer links using scrollspy to render a smooth transition to the parts of the document.
+        -->
+
+    <!-- EXERCISE 15
+            Add a Album Carousel with controls to display the top 10 albums
+        -->
+
+    <!-- EXERCISE 16
+            Make every section of the page "collapsable" if the user clicks on the section title
+        -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+</body></html>
