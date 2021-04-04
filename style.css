@@ -1,27 +1,18 @@
-*{
-    box-sizing:border-box;
-}
 
-
-body{
-  
-}
-
-.card{
-    width:100%;
-}
-
-.bg-overlay {
-    color:white;
-    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("record.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    height: 400px;
-    padding-top: 50px;
-}
-
+    /* EXERCISE 1
+          For all Albums we'd like to have a consistent style.
+          Create a class for:
+          - The album container
+          - The album cover
+          - The album title
+          - The album group / singer / dj
+          - The album genre
+          - The album duration
+          - etc
+       */
+/* main{
+    background-color:black;
+} */
 
 .album-review{
     text-align:center;
@@ -33,8 +24,14 @@ body{
 
 .album-container:hover{
     transform: scale(1.05);
-    transition: 750ms;
+    transition: 750ms ease-in-out;
     border-radius:3px;
+ 
+}
+
+.album-title{
+
+
 }
 
 .album-cover{
@@ -52,6 +49,24 @@ body{
     font-family:arial;
     font-size:3em;
     letter-spacing: .1em;
+    animation: forwards;
+    animation-name: fadeLeft;
+    animation-duration: 2s;
+}
+
+@keyframes fadeLeft {
+
+    0%{
+        transform: translateX(-50%);
+        opacity:0;
+
+    }
+
+    100%{
+        transform: translateX(20%);
+        visibility: visibile;
+        opacity:1;
+    }
 }
 
 
@@ -65,27 +80,161 @@ body{
     color:#dc3545;
 }
 
+.album-genre{
 
 
+}
 
-.bg-overlay-1 {
+.album-duration{
+
+
+}
+
+.overlayP{
+    display:none;
+    font-size:.9em;
     color:white;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("stage.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    height: 400px;
-    padding-top: 50px;
+}
+
+.album-info{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    z-index:5;
+    background-color:rgba(0,0,0,.7);
+    animation-fill-mode:forwards;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes fadeIn{
+    0%{
+        visibility: hidden;
+        opacity:0;
+    }
+
+    100%{
+        visibility:visible;
+        opacity:1;
+    }
+}
+
+.rating{
+    background-color:white;
+    padding:1em;
 }
 
 
 
-/* .bg-img{
-    height:768px;
+
+footer{
+    background-color:rgb(0,0,0);
+    height:100%;
 }
- */
 
+.info{
+    color:white;
+}
 
+.fab{
+    color:white;
+} 
+
+.card{
+    border:none;
+    outline:none;
+}
+.card-deck{
+    border:none;
+}
+.card:hover{
+    cursor:pointer;
+}
+@media(min-width:320px){
+
+    .bg-overlay-1 {
+        color:white;
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("stage.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: #fff;
+        height: 400px;
+        padding-top: 50px;
+    }
+    
+    .bg-overlay-2 {
+        color:white;
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("nipsey-hussle-performing-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center bottom;
+        background-repeat: no-repeat;
+        color: #fff;
+        height: 100%;
+        padding-top: 50px;
+        z-index: -1;
+    }
+    .bg-overlay-3 {
+        color:white;
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("hopsin-4.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center top;
+        color: #fff;
+        height: 100%;
+        padding-top: 50px;
+        z-index: -1;
+    }
+
+}
+@media(min-width:767px){
+
+    .bg-overlay-1 {
+        color:white;
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("bg-music.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        color: #fff;
+        height: 400px;
+        padding-top: 50px;
+    }
+    
+    .bg-overlay-2 {
+        color:white;
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("nipsey-hussle-performing-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center bottom;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: #fff;
+        height: 100%;
+        padding-top: 50px;
+        z-index: -1;
+    }
+    .bg-overlay-3 {
+        color:white;
+        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("hopsin-4.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position:center top;
+        color: #fff;
+        height: 100%;
+        padding-top: 50px;
+        z-index: -1;
+    }
+}
+
+@media (min-width:1100px){
+    .card-deck{
+        padding-left:10rem;
+        padding-right:10rem;
+    }
+}
 
 

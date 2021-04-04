@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<!-- saved from url=(0433)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/758820329350704.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210401%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210401T121601Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27D9.html&X-Amz-Signature=cef0e449f6f5bb47929a87e5a7d538748d2b6bb5ad4d9916dbd6af339f7f9961 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
-<!--
+<!-- saved from url=(0433)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/984565489511016.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210323%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210323T131431Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27D2.html&X-Amz-Signature=b3338dc25c487f77bab6584ed57145797245a000f28585866b06bd415b98cc9a -->
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="style.css" rel ="stylesheet" >
+    <link href="../fontawesome/css/all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+  </head>
+  <body>
+      <!--
 ASSIGNMENT RULES
 - The solution must be pushed to the repository and submitted the GitHub link on Eduflow before 17:00
 - You can google / use StackOverflow BUT we suggest you to use just the material provided
@@ -23,44 +31,62 @@ Most of the time, even the most expert designers, need inspiration.
 Spend some time surfing the web searching for the way of representing the albums that you like the most.
 Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
 -->
-    <style>
-      /* PREVIOUS STUFF */
-    </style>
-   
-   
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-</head>
-  <body>
-    <!-- EXERCISE 1
+
+
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page
+        -->
+        <nav class="navbar navbar-expand-xl navbar-dark  text-white p-lg-3">
+            <a class="navbar-brand font-weight-bold" href="#">STR8 FIRE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav ml-lg-auto mr-lg-auto ">
+                <li class="nav-item  mr-lg-5">
+                  <a class="nav-link" href="../M2-D2/M2-D2-HW.html">Home </a>
+                </li>
+                <li class="nav-item active mr-lg-5">
+                  <a class="nav-link" href="../M2-D9-HW.html">Album Playlists<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-lg-5">
+                    <a class="nav-link" href="#">What's Hot</a>
+                  </li>
+                  <li class="nav-item mr-lg-5">
+                    <a class="nav-link" href="#">Hot Trash</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark bg-danger text-white my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+            <!-- EXERCISE 1
         Use the specific bootstrap component to implement a Breadcrumb
         -->
-       
+      
+        <ol class="breadcrumb mb-0 p-3 text-dark bg-light">
+          <li class="breadcrumb-item"><a href="../M2-D2/M2-D2-HW.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Album-Playlist</li>
+        </ol>
 
     <!-- EXERCISE 2
             Create a Jumbotron section with a quick explanation / image of the website
         -->
-
-        <div class="jumbotron jumbotron-fluid mb-0 bg-overlay d-flex flex-column justify-content-center" >
-             
-
-            <div class="container text-white">
-              <span class=" display-4 d-block font-weight-bold">Carls Playlist</span>
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Favourites</li>
-                </ol>
-              </nav>
+        <div class="jumbotron jumbotron-fluid mb-0 bg-overlay-1 a d-flex flex-column justify-content-center" >
+            <div class="container text-danger">
+                <span class="d-block display-5 font-weight-bold">Carls Playlist</span>
               
-              <!-- <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Library</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Data</li>
-                </ol> -->
-       
-              </nav>
+            </div>
+          </div>
+    
+        
+
+              
             </div>
           </div>
 
@@ -69,104 +95,51 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
     <!-- EXERCISE 3
             Foreach album in the favorite list, place the genre inside a badge
         -->
-        <div class="container-fluid p-5 " style="background:rgb(10,10,10)" >
-            <span class="display-4 text-xs-center  text-light">Favourite</span>
-    
-             <div class=" card-deck p-lg-5 ">
-    
-        <div class="col-md-2 col-lg-3 mb-5 align-self-md-start">
-          <div class="card h-100">
-            <span class="badge rounded-pill bg-dark">Dark</span>
-            <img src="cover-1.webp" class="card-img-top album-cover" alt="...">
-            <div class="card-body">
-                <h5 class="card-title album-title">Victory Lap</h5>
-                    <h4 class="album-artist">Nipsey Hussle</h4>
-                    <h6 class="album-genre"> Hip-Hop/Rap </h6>
-                    <h6 class="album-duration">1 Hour and 5 minutes</h6>
-                <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
-                </div>
-            </div>
-        </div>
-    
-        <div class="col-md-2 col-lg-3 mb-5 ">
-            <div class="card h-100">
-              <img src="cover-2.webp" class="card-img-top album-cover" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title album-title">A love Letter To You 4</h5>
-                      <h4 class="album-artist">Trippie Redd</h4>
-                      <h6 class="album-genre"> Hip-Hop/Rap </h6>
-                      <h6 class="album-duration">58 minutes </h6>
-                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
-                  </div>
-              </div>
-          </div>
-    
-          <div class="col-md-2 col-lg-3 mb-5">
-            <div class="card h-100">
-              <img src="cover-3.webp" class="card-img-top album-cover" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title album-title">No Shame</h5>
-                      <h4 class="album-artist">Hopsin</h4>
-                      <h6 class="album-genre"> Rap/Hip Hop </h6>
-                      <h6 class="album-duration">1 Hour and 13 minutes </h6>
-                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
-                  </div>
-              </div>
-          </div>
-    
-          <div class="col-md-2 col-lg-3 mb-5">
-            <div class="card h-100">
-              <img src="cover-4.webp" class="card-img-top album-cover" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title album-title">Hybrid Theory</h5>
-                      <h4 class="album-artist">Linkin Park</h4>
-                      <h6 class="album-genre"> Rock, Hip-Hop/Rap  </h6>
-                      <h6 class="album-duration">49 minutes<h6>
-                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
-                  </div>
-              </div>
-          </div>
-    
-          <div class="col-md-2 col-lg-3 mb-5">
-            <div class="card h-100">
-              <img src="cover-5.webp" class="card-img-top album-cover" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title album-title">Phobia</h5>
-                      <h4 class="album-artist">Breaking Benjamin</h4>
-                      <h6 class="album-genre"> Rock </h6>
-                      <h6 class="album-duration">43 minutes </h6>
-                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
-                  </div>
-              </div>
-          </div>
-    
-    
-          <div class="col-md-2 col-lg-3 mb-5">
-            <div class="card h-100">
-              <img src="cover-6.webp" class="card-img-top album-cover" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title album-title">One-X</h5>
-                      <h4 class="album-artist">Three Days Grace</h4>
-                      <h6 class="album-genre"> Rock </h6>
-                      <h6 class="album-duration">4 minutes<h6>
-                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
-                  </div>
-              </div>
-          </div>
-    </div>
-    </div>
+        
     
     <!-- EXERCISE 4
             Foreach album in the favorite list, use the Bootstrap Card to contain it.
-            Use card layouts to format it in the best and more compatible way.
+            Use card layouts to format it in the best and more compatible way. DONE
         -->
 
     <!-- EXERCISE 5
-            Place the tracklist inside a Bootstrap table.
+            Place the tracklist inside a Bootstrap table. 
             The row column must be alternate.
             Use one column for the track order, one of the title and one for the length.
             (If you want, you can also add extra columns)
         -->
+        <div class="container my-5 mx-auto w-50 ">
+        <table class="table table-light table-hover">
+            <thead>
+              <tr class="text-white table-dark" >
+                <th scope="col">#</th>
+                <th scope="col">Song</th>
+                <th scope="col">Album</th>
+                <th scope="col">Genre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
     <!-- EXERCISE 6
             Add a DELETE bootstrap button on each row of the tracklist, with appropriate transitions on the various pseudo-class states 
@@ -236,7 +209,59 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
     <!-- EXERCISE 16
             Make every section of the page "collapsable" if the user clicks on the section title
         -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+
     
-</body></html>
+
+        <footer>
+        <div class="container bg-transparent mt-md-5">
+            <div class="row pt-5 pb-5 ">
+                <div class="col-12 col-md-2">
+                    <dl class="info">
+                        <dt><h2>STR8 FIRE</h2></dt>
+                    </dl>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <div class="d-flex flex-column flex-md-row justify-content-md-evenly ">
+                        <dl class="info">
+                            <dt>Company</dt>
+                            <dd>About</dd>
+                            <dd>Jobs</dd>
+                            <dd>For the record</dd>
+                        </dl>
+
+                        <dl class="info">
+                            <dt> STR8 FIRE</dt>
+                            <dd>World</dd>
+                            <dd>Its me</dd>
+                        </dl>
+               
+                        <dl class="info">
+                            <dt> STR8 FIRE</dt>
+                            <dd>World</dd>
+                            <dd>Its me</dd>
+                        </dl>
+                </div>
+
+            </div>
+            <div class="col-12 col-md-2 ml-md-auto ">
+                 <div class="d-flex flex-column flex-md-row justify-content-md-evenly ">
+
+                        <div><i class="fab fa-instagram fa-2x"></i></div>
+                        <div><i class="fab fa-twitter fa-2x"></i> </i></div>
+                        <div><i class="fab fa-facebook-f fa-2x"></i></div>
+
+
+    
+                   
+                </div>
+            </div>     
+        </footer>
+
+
+        <script src="script.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
