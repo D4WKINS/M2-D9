@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!-- saved from url=(0433)https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/984565489511016.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210323%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Date=20210323T131431Z&X-Amz-Expires=600&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27D2.html&X-Amz-Signature=b3338dc25c487f77bab6584ed57145797245a000f28585866b06bd415b98cc9a -->
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="style.css" rel ="stylesheet" >
+    <link href="../fontawesome/css/all.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+  </head>
+  <body>
+
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page
+        -->
+        <nav class="navbar navbar-expand-xl navbar-dark  text-white p-lg-3">
+            <a class="navbar-brand font-weight-bold myFontB" href="#">STR8 FIRE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav ml-lg-auto mr-lg-auto ">
+                <li class="nav-item active mr-lg-5">
+                  <a class="nav-link" href="M2-D2-HW.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-lg-5">
+                  <a class="nav-link" href="M2-D9-HW.html">Album Playlists</a>
+                </li>
+                <li class="nav-item mr-lg-5">
+                    <a class="nav-link" href="#">What's Hot</a>
+                  </li>
+                  <li class="nav-item mr-lg-5">
+                    <a class="nav-link" href="#">Hot Trash</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark bg-danger text-white my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+
+    <!-- EXERCISE 3
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller viewport)
+            - 2 albums per row when you are on a small screen
+        -->
+
+        <div class="jumbotron jumbotron-fluid mb-0 bg-overlay-1 a d-flex flex-column justify-content-center" >
+            <div class="container text-danger">
+              <span class=" d-block display-5 font-weight-bold" >All Your Favorite Music In One Place</span>
+              <p class=" lead text-white">Need suggestions, We got flames!</p>
+            </div>
+          </div>
+
+
+                        
+                    <div class="container-fluid p-5" style="background: rgb(0,0,0);">
+                        <span class="myFontB text-xs-center text-md-left my-4 ps-lg-5 text-light" style="font-size:2em" id="hot"> Hot Right Now!</span>
+                        <span class="myFontB  "><a class="btn btn-danger" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Hide/Show</a></span>
+                
+         <div class="card-deck mt-5 collapse" id="collapseExample">
+    <div class="col-md-4  mb-5 album-container slide-fwd-center">
+      <div class="card h-100">
+        <img style="position:relative" src="cover-1.webp" class="card-img-top album-cover" alt="...">
+
+        <div class="album-overlay">
+            <p class="overlayP" style="display:none">
+                Victory Lap is the debut and only studio album by American rapper Nipsey Hussle. It was released on February 16, 2018 through All Money In No Money Out and Atlantic Records.
+            </p>      
+        </div>
+
+        <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light">Hip-Hop/Rap</span>
+        <div class="card-body">
+            <h5 class="card-title album-title">Victory Lap</h5>
+                <h4 class="album-artist">Nipsey Hussle</h4>
+                <!-- <h6 class="album-genre"> Hip-Hop/Rap </h6> -->
+                <h6 class="album-duration">1 Hour and 5 minutes</h6>
+            <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-5 album-container" >
+        <div class="card h-100">
+          <img style="position:relative" src="cover-2.webp" class="card-img-top album-cover" alt="...">
+
+          <div class="album-overlay">
+            <p class="overlayP" style="display:none">
+                A Love Letter to You 4 is the fourth commercial mixtape by American rapper and singer Trippie Redd. 
+                It was released on November 22, 2019, by TenThousand Projects and Caroline Distribution.</p>      
+    </div>
+
+          <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light">Hip-Hop/Rap</span>
+          <div class="card-body">
+              <h5 class="card-title album-title">A love Letter To You 4</h5>
+                  <h4 class="album-artist">Trippie Redd</h4>
+                  <!-- <h6 class="album-genre"> Hip-Hop/Rap </h6> -->
+                  <h6 class="album-duration">58 minutes </h6>
+              <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-5  border-none album-container">
+        <div class="card h-100 border-none">
+          <img style="position:relative" src="cover-3.webp" class="card-img-top album-cover"  alt="...">
+
+          <div class="album-overlay">
+                    <p class="overlayP" style="display:none">No Shame is the fifth studio album by American rapper Hopsin.
+                        The album was released on November 24, 2017, through Undercover Prodigy and 300 Entertainment.
+                    </p>      
+            </div>
+
+          <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light">Hip-Hop/Rap</span>
+          <div class="card-body">
+              <h5 class="card-title album-title">No Shame</h5>
+                  <h4 class="album-artist">Hopsin</h4>
+                  <!-- <h6 class="album-genre"> Rap/Hip Hop </h6> -->
+                  <h6 class="album-duration">1 Hour and 13 minutes </h6>
+              <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-5  album-container">
+        <div class="card h-100">
+          <img style="position:relative" src="cover-4.webp" class="card-img-top album-cover" alt="...">
+
+          <div class="album-overlay">
+            <p class="overlayP" style="display:none">
+                Hybrid Theory is the debut studio album by American rock band Linkin Park,
+                 released on October 24, 2000, through Warner Bros. Records
+            </p>      
+    </div>
+
+          <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light">Rock, Hip-Hop/Rap</span>
+          <div class="card-body">
+              <h5 class="card-title album-title">Hybrid Theory</h5>
+                  <h4 class="album-artist">Linkin Park</h4>
+                  <!-- <h6 class="album-genre"> Rock, Hip-Hop/Rap  </h6> -->
+                  <h6 class="album-duration">49 minutes<h6>
+              <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 mb-5  album-container">
+        <div class="card h-100">
+          <img style="position:relative" src="cover-5.webp" class="card-img-top album-cover" alt="...">
+
+          <div class="album-overlay">
+            <p class="overlayP" style="display:none">
+                Phobia was released on August 8, 2006, and quickly sold out at major retail chains such as Best Buy and Target.
+                 The album sold 131,000 copies in its first week
+            </p>      
+    </div>
+          <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light">Rock</span>
+          <div class="card-body">
+              <h5 class="card-title album-title">Phobia</h5>
+                  <h4 class="album-artist">Breaking Benjamin</h4>
+                  <!-- <h6 class="album-genre"> Rock </h6> -->
+                  <h6 class="album-duration">43 minutes </h6>
+              <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+              </div>
+          </div>
+      </div>
+
+
+      <div class="col-md-4  mb-5 album-container">
+        <div class="card h-100">
+          <img style="position:relative" src="cover-6.webp" class="card-img-top album-cover" alt="...">
+
+          <div class="album-overlay">
+            <p class="overlayP" style="display:none">
+                One-X was released on June 13, 2006. The album was both a critical and financial success, 
+                being certified triple-platinum in both the U.S. and Canada.
+            </p>      
+    </div>
+          <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light">Rock</span>
+          <div class="card-body">
+              <h5 class="card-title album-title">One-X</h5>
+                  <h4 class="album-artist">Three Days Grace</h4>
+                  <!-- <h6 class="album-genre"> Rock </h6> -->
+                  <h6 class="album-duration">4 minutes<h6>
+              <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+              </div>
+          </div>
+      </div>
+</div>
+</div>
+
+
+           
+    
+    <!-- EXERCISE 4
+            Create a section for the album reviews.
+            Pick one of your fav albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Duration
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+    -->
+        <div class="container-fluid album-review p-md-5 bg-overlay-2">
+            <div class="row px-5">
+                <!-- <span class="display-4 text-danger mb-md-5 "> Carls Favourite Album</span> -->
+                <div class="col-md-12 col-lg-8" id="fav-album-info">
+                    <span class="display-5 d-md-inline-block text-danger mb-3  ">Victory Lap</span>
+                    <p class="p-sm-2 mb-5 ms-md-auto me-md-auto text-left text-white pt-3">There’s a three-song run towards the beginning of Nipsey Hussle’s Victory Lap 
+                        that explains how Neighborhood Nip’s official debut -- and also, his curtain call
+                         -- embodies its title. Track three features YG, track four Diddy, and five Kendrick Lamar.<br><br>
+                          In these three tracks you hear everything Nipsey Hussle (born Ermias Asghedom) aspired to be,
+                           and eventually became, in his all too brief 33 years. </p>
+                           
+                    </div>
+                <div class="col-md-12 col-lg-4 flex-column align-content-md-center overflow-hidden">
+                    <figure class="px-2 px-md-5 pt-md-5 ">
+                     <img class="img-fluid " src="cover-1.webp" data-toggle="collapse" data-target="fav-album-info">
+                     <!-- <figcaption class="rating  text-danger mb-5">&#9733; &#9733; &#9733; &#9733; &#9733;</figcaption> -->
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+
+    <!-- EXERCISE 5
+            Worst album list! Find out the music you don't really like or you find overrated and list it
+            in this "hall of shame" chart!
+        -->
+
+        <div class="container-fluid p-5 " style= "background:black" >
+            <span class="myFontB display-4 text-xs-center text-white mb-md-5 text-md-center text-lg-right ps-lg-5" style="font-size:2em" id="speakers">Hot Trash!</span>
+    
+             <div class="card-deck mt-5">
+    
+        <div class="col-md-4  mb-5 mb-5 album-container">
+          <div class="card h-100">
+            <img style="position:relative" src="cover-7.webp" class="card-img-top album-cover" alt="...">
+            <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light"> Rap/Hip Hop</span>
+            <div class="card-body">
+                <h5 class="card-title album-title">Love Story</h5>
+                    <h4 class="album-artist">Yela Wolf</h4>
+                    <h6 class="album-genre"> Rap/Hip Hop </h6>
+                    <h6 class="album-duration">1 Hour and 14 minutes</h6>
+                <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-4  mb-5 album-container">
+            <div class="card h-100">
+              <img style="position:relative" src="cover-8.webp" class="card-img-top album-cover" alt="...">
+              <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light"> Rap/Hip Hop</span>
+              <div class="card-body">
+                  <h5 class="card-title album-title">Culture ||</h5>
+                      <h4 class="album-artist">Migos</h4>
+                      <h6 class="album-genre"> Rap/Hip Hop </h6>
+                      <h6 class="album-duration">1 Hour and 45 minutes </h6>
+                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                  </div>
+              </div>
+          </div>
+    
+          <div class="col-md-4  mb-5 album-container">
+            <div class="card h-100">
+              <img style="position:relative" src="cover-9.webp" class="card-img-top album-cover" alt="...">
+              <span style="position:absolute; top:3px; right:3px" class="badge rounded-pill bg-danger text-light"> Rap/Hip Hop</span>
+              <div class="card-body">
+                  <h5 class="card-title album-title">Invasion Of Privacy</h5>
+                      <h4 class="album-artist">Cardi B</h4>
+                      <!-- <h6 class="album-genre"> Rap/Hip Hop </h6> -->
+                      <h6 class="album-duration">45 minutes </h6>
+                  <!-- <a href="#" class="btn mt-2 btn-block btn-primary bg-dark border-0">Buy Now</a> -->
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- EXERCISE 6
+            Do you have any musician / band you admire or you are a fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+
+        <div class="bg-img container-fluid album-review p-md-5 bg-overlay-3 justify-content-center">
+            <div class="row">
+                <!-- <span class="tag display-4 text-danger mb-4 text-lg-right ps-lg-5"> Killer Artist</span> -->
+                <div class="col-lg-12 h-100">
+                    <span class=" display-4 text-danger" >Hopsin</span>
+                    <p class=" mb-5 ms-md-auto me-md-auto text-left text-white pt-3">Born on July 18, 1985, Marcus Jamal Hopson grew up in the San Fernando Valley of Los Angeles County. 
+                        Stories from his upbringing can be heard in his lyrics. Hopsin was an actor as a youth, long before he was recognized as a talented Hip Hop artist.<br><br> He was a paid
+                         extra/actor on a variety of television shows and a movie or two.Marcus was in Special Education classes throughout most of school.
+                         Eventually, sick of the system he could not find his place in, Hop dropped out of school to pursue a career in entertainment.
+                     </p>
+                           <!-- <h4 class="text-danger mb-5"><span class="text-white ">STR8 FIRE </span> / <span class="text-white">10 </span></h4> -->
+                </div>
+            </div>
+        </div>
+
+    <!-- EXERCISE 7
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+        <div class="container mt-5">
+            <div class="card-deck" id="tapestry">
+               
+            </div>
+        </div>
+
+    <!-- EXERCISE 8
+            Implement a footer with some information / social links
+        -->
+
+
+        <footer>
+            <div class="container bg-transparent mt-md-5 p-3">
+                <div class="row pt-5 pb-5 ">
+                    <div class="col-12 col-md-4 col-xl-2 mb-3 mb-md-0">
+                        <dl class="info text-center myFontB">
+                            <dd><h3>STR8 FIRE</h3></dd>
+                        </dl>
+                    <div class="d-flex flex-row justify-content-center justify-content-md-evenly px-lg-5 px-xl-0">
+                        <div class="pr-3 pr-md-0"><i class="fab fa-instagram fa-2x"></i></div>
+                        <div ><i class="fab fa-twitter fa-2x"></i> </i></div>
+                        <div class="pl-3 pl-md-0"><i class="fab fa-facebook-f fa-2x"></i></div>
+                    </div>
+                    </div>
+                   
+    
+                    <div class="col-12 col-md-12 col-xl-6 order-3 order-xl-2">
+                        <div class="d-flex flex-column flex-md-row justify-content-md-evenly ">
+                            <dl class="info">
+                                <dt class="pb-3 text-danger">COMPANY</dt>
+                                <dd>About</dd>
+                                <dd>Jobs</dd>
+                                <dd>For the Record</dd>
+                            </dl>
+    
+                            <dl class="info">
+                                <dt class="pb-3 text-danger"> PREMIUM PLANS</dt>
+                                <dd>Individual</dd>
+                                <dd>Student</dd>
+                                <dd>Duo</dd>
+                                <dd>Family</dd>
+                            </dl>
+                   
+                            <dl class="info">
+                                <dt class="pb-3 text-danger"> NAVIGATION</dt>
+                                <dd><a class="nav-link p-0 text-white text-decoration-underline" href="../M2-D2-HW.html">Home <span class="sr-only">(current)</span></a></dd>
+                                <dd><a class="nav-link p-0 text-white text-decoration-underline" href="../M2-D9-HW.html">Album Playlists<span class="sr-only">(current)</span></a></dd>
+                                <dd><a class="nav-link p-0 text-white text-decoration-underline" href="../M2-D2-HW.html">What's Hot<span class="sr-only">(current)</span></a></dd>
+                                <dd><a class="nav-link p-0 text-white text-decoration-underline" href="../M2-D2-HW.html">Hot Trash<span class="sr-only">(current)</span></a></dd>
+                            </dl>
+                    </div>
+                </div>
+    
+                <div class="col-12 col-md-8 col-xl-4 order-2 order-xl-3 mb-5 mb-xl-0 ">
+                    <form class="bg-transparent text-white">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Leave us a message</label>
+                          <textarea class="form-control"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                      </form>
+                </div>     
+            </footer>
+
+    <!-- EXTRA:
+            EXERCISE 9
+            Create an album details area that is going to be toggled on and off by clicking on the album image
+        -->
+
+    <!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible) 
+            (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
+        -->
+
+    <!--
+         EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
+        -->
+        <script src="script.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -38,7 +38,7 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             This navigation bar must link every section in your page
         -->
         <nav class="navbar navbar-expand-xl navbar-dark  text-white p-lg-3">
-            <a class="navbar-brand font-weight-bold" href="#">STR8 FIRE</a>
+            <a class="navbar-brand font-weight-bold myFontB" href="#">STR8 FIRE</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -46,10 +46,10 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             <div class="collapse navbar-collapse " id="navbarNav">
               <ul class="navbar-nav ml-lg-auto mr-lg-auto ">
                 <li class="nav-item  mr-lg-5">
-                  <a class="nav-link" href="../M2-D2/M2-D2-HW.html">Home </a>
+                  <a class="nav-link" href="M2-D2-HW.html">Home </a>
                 </li>
                 <li class="nav-item active mr-lg-5">
-                  <a class="nav-link" href="../M2-D9-HW.html">Album Playlists<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="M2-D9-HW.html">Album Playlists<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mr-lg-5">
                     <a class="nav-link" href="#">What's Hot</a>
@@ -68,16 +68,18 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             <!-- EXERCISE 1
         Use the specific bootstrap component to implement a Breadcrumb
         -->
-      
-        <ol class="breadcrumb mb-0 p-3 text-dark bg-light">
-          <li class="breadcrumb-item"><a href="../M2-D2/M2-D2-HW.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Album-Playlist</li>
-        </ol>
+
+        <nav aria-label="breadcrumb" >
+            <ol class="breadcrumb mb-0 p-3 text-white" >
+                <li class="breadcrumb-item"><a class="text-danger" href="M2-D2-HW.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Album-Playlist</li>
+            </ol>
+          </nav>
 
     <!-- EXERCISE 2
             Create a Jumbotron section with a quick explanation / image of the website
         -->
-        <div class="jumbotron jumbotron-fluid mb-0 bg-overlay-1 a d-flex flex-column justify-content-center" >
+        <div class="jumbotron jumbotron-fluid mb-0 bg-overlay-4 a d-flex flex-column justify-content-center" >
             <div class="container text-danger">
                 <span class="d-block display-5 font-weight-bold">Carls Playlist</span>
               
@@ -108,44 +110,106 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             Use one column for the track order, one of the title and one for the length.
             (If you want, you can also add extra columns)
         -->
-        <div class="container my-5 mx-auto w-50 ">
-        <table class="table table-light table-hover">
+        <div class="tracklist container my-5 mx-auto px-0 ">
+        <table class=" table table-hover">
             <thead>
-              <tr class="text-white table-dark" >
+              <tr class="text-white bg-danger">
                 <th scope="col">#</th>
                 <th scope="col">Song</th>
-                <th scope="col">Album</th>
-                <th scope="col">Genre</th>
+                <th scope="col">Length</th>
+                <th scope="col">Actions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
+                <th scope="row" class=" number">1</th>
                 <td>Mark</td>
-                <td>Otto</td>
                 <td>@mdo</td>
+                <!-- <td><button type="button" class="deleteBtn btn btn-danger" onclick="deleteTrack()">X</button></td> -->
+               
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th scope="row" class="number">2</th>
                 <td>Jacob</td>
-                <td>Thornton</td>
                 <td>@fat</td>
+                <!-- <td><button type="button" class="deleteBtn  btn btn-danger" onclick="deleteTrack()">X</button></td> -->
+               
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row" class="number">3</th>
                 <td>Larry</td>
-                <td>the Bird</td>
                 <td>@twitter</td>
+                <td><button type="button" class="deleteBtn  btn btn-danger" onclick="deleteTrack()">X</button></td>
+             
               </tr>
+
+              
             </tbody>
           </table>
+
+          <button type="button" class="btn btn-dark addBtn">Add+</button>
+          
         </div>
+            <!--<modal>-->
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add song to playlist <h5>
+                  <button type="button" class="closeBtn close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6">
+                     <label for="number">Track number</label>
+                  <div class="input-group mb-3">
+                    <input type="text" id="trackNumber" name="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                    <label for="length">Length</label>
+                    <div class="input-group mb-3">
+                      <input type="text" id="length" name="length" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+
+                   
+                  </div>
+
+                <div class="col-6">
+                    <label for="name">Track name</label>
+                  <div class="input-group mb-3">
+                    <input type="text" id="name" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                  <label for="feat">Track featuring</label>
+                  <div class="input-group mb-3">
+                    <input type="text" id="feat" name="feat" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
+
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheckDisabled1">
+                    <label class="custom-control-label" for="customCheckDisabled1">Live track</label>
+                  </div>
+
+                </div>
+                
+            </div>
+            </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary closeBtn">Close</button>
+                  <button type="button" id="addTrackBtn" class="btn btn-primary">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--</modal>-->
 
     <!-- EXERCISE 6
             Add a DELETE bootstrap button on each row of the tracklist, with appropriate transitions on the various pseudo-class states 
             which will apply for the subsequent button you'll use.
             Clicking on the button the row must disappear. 
-            Add a fade-out effect using a CSS transition effect
+            Add a fade-out effect using a CSS transition effect Done
         -->
 
     <!-- EXERCISE 7
@@ -153,11 +217,13 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
             The "Contact Me" form has 2 fields:
             - Email
             - Text of the message
-            Use the correct Bootstrap styles for styling the buttons
+            Use the correct Bootstrap styles for styling the buttons DONE
         -->
 
+        
+
     <!-- EXERCISE 8 
-            Add to the footer an extra column with the same links of the top nav.
+            Add to the footer an extra column with the same links of the top nav. DONE
         -->
 
     <!-- EXERCISE 9
@@ -216,46 +282,59 @@ Could be the Amazon way, the Spotify or Apple music way or some other blog out t
         <footer>
         <div class="container bg-transparent mt-md-5">
             <div class="row pt-5 pb-5 ">
-                <div class="col-12 col-md-2">
-                    <dl class="info">
-                        <dt><h2>STR8 FIRE</h2></dt>
+                <div class="col-12 col-md-4 col-xl-2 mb-3 mb-md-0">
+                    <dl class="info text-center myFontB">
+                        <dd><h3>STR8 FIRE</h3></dd>
                     </dl>
+                <div class="d-flex flex-row justify-content-center justify-content-md-evenly px-lg-5 px-xl-0">
+                    <div class="pr-3 pr-md-0"><i class="fab fa-instagram fa-2x"></i></div>
+                    <div ><i class="fab fa-twitter fa-2x"></i> </i></div>
+                    <div class="pl-3 pl-md-0"><i class="fab fa-facebook-f fa-2x"></i></div>
                 </div>
+                </div>
+               
 
-                <div class="col-12 col-md-6 ">
+                <div class="col-12 col-md-12 col-xl-6 order-3 order-xl-2">
                     <div class="d-flex flex-column flex-md-row justify-content-md-evenly ">
                         <dl class="info">
-                            <dt>Company</dt>
+                            <dt class="pb-3">COMPANY</dt>
                             <dd>About</dd>
                             <dd>Jobs</dd>
-                            <dd>For the record</dd>
+                            <dd>For the Record</dd>
                         </dl>
 
                         <dl class="info">
-                            <dt> STR8 FIRE</dt>
-                            <dd>World</dd>
-                            <dd>Its me</dd>
+                            <dt class="pb-3"> PREMIUM PLANS</dt>
+                            <dd>Individual</dd>
+                            <dd>Student</dd>
+                            <dd>Duo</dd>
+                            <dd>Family</dd>
                         </dl>
                
                         <dl class="info">
-                            <dt> STR8 FIRE</dt>
-                            <dd>World</dd>
-                            <dd>Its me</dd>
+                            <dt class="pb-3"> NAVIGATION</dt>
+                            <dd><a class="nav-link p-0 text-white text-decoration-underline" href="../M2-D2-HW.html">Home <span class="sr-only">(current)</span></a></dd>
+                            <dd><a class="nav-link p-0 text-white text-decoration-underline" href="../M2-D9-HW.html">Album Playlists<span class="sr-only">(current)</span></a></dd>
+                            <dd><a class="nav-link p-0 text-white text-decoration-underline" href="../M2-D2-HW.html">What's Hot<span class="sr-only">(current)</span></a></dd>
+                            <dd><a class="nav-link p-0 text-white text-decoration-underline" href="../M2-D2-HW.html">Hot Trash<span class="sr-only">(current)</span></a></dd>
                         </dl>
                 </div>
-
             </div>
-            <div class="col-12 col-md-2 ml-md-auto ">
-                 <div class="d-flex flex-column flex-md-row justify-content-md-evenly ">
 
-                        <div><i class="fab fa-instagram fa-2x"></i></div>
-                        <div><i class="fab fa-twitter fa-2x"></i> </i></div>
-                        <div><i class="fab fa-facebook-f fa-2x"></i></div>
-
-
-    
-                   
-                </div>
+            <div class="col-12 col-md-8 col-xl-4 order-2 order-xl-3 mb-5 mb-xl-0 ">
+                <form class="bg-transparent text-white">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Leave us a message</label>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                  </form>
             </div>     
         </footer>
 

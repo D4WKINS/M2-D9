@@ -14,6 +14,22 @@
     background-color:black;
 } */
 
+@font-face{
+    font-family: 'fire';
+    src: url('/News_Cycle/NewsCycle-Regular.ttf') format('truetype');
+  }
+  @font-face{
+    font-family: 'fire-bold';
+    src: url('/News_Cycle/NewsCycle-Bold.ttf') format('truetype');
+  }
+
+  .myFont{
+    font-family: 'fire';
+  }
+  .myFontB{
+    font-family: 'fire-bold';
+  }
+
 .album-review{
     text-align:center;
     background-color:black;
@@ -26,7 +42,6 @@
     transform: scale(1.05);
     transition: 750ms ease-in-out;
     border-radius:3px;
- 
 }
 
 .album-title{
@@ -39,19 +54,24 @@
 }
 
 
-.navbar{
+.navbar {
 
     background-color:rgb(0,0,0);
     
 }
 
 .navbar-brand{
-    font-family:arial;
-    font-size:3em;
+    font-size:4em;
+    font-weight: bolder;
     letter-spacing: .1em;
     animation: forwards;
     animation-name: fadeLeft;
     animation-duration: 2s;
+}
+
+.navbar-brand::before{
+   font-family: "Font Awesome 5 Free"; font-weight:900; content:"\f06d";
+   padding-right:.8rem;
 }
 
 @keyframes fadeLeft {
@@ -91,7 +111,6 @@
 }
 
 .overlayP{
-    display:none;
     font-size:.9em;
     color:white;
 }
@@ -100,12 +119,40 @@
     display:flex;
     flex-direction:column;
     position:absolute;
+    justify-content: center;
+    padding:1rem;
     z-index:5;
     background-color:rgba(0,0,0,.7);
-    animation-fill-mode:forwards;
+    animation-fill-mode:backwards;
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-timing-function: linear;
+}
+
+.trackFade {
+        -webkit-animation: fade-out 1s ease-out both;
+                animation: fade-out 1s ease-out both;
+}
+
+
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+@keyframes fadeOut{
+
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
 }
 
 @keyframes fadeIn{
@@ -125,7 +172,9 @@
     padding:1em;
 }
 
+.tracklist{
 
+}
 
 
 footer{
@@ -141,6 +190,10 @@ footer{
     color:white;
 } 
 
+.breadcrumb{
+    border-radius: 0px;
+}
+
 .card{
     border:none;
     outline:none;
@@ -151,52 +204,67 @@ footer{
 .card:hover{
     cursor:pointer;
 }
-@media(min-width:320px){
 
-    .bg-overlay-1 {
-        color:white;
-        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("stage.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        color: #fff;
-        height: 400px;
-        padding-top: 50px;
-    }
-    
-    .bg-overlay-2 {
-        color:white;
-        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("nipsey-hussle-performing-3.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center bottom;
-        background-repeat: no-repeat;
-        color: #fff;
-        height: 100%;
-        padding-top: 50px;
-        z-index: -1;
-    }
-    .bg-overlay-3 {
-        color:white;
-        background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("hopsin-4.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center top;
-        color: #fff;
-        height: 100%;
-        padding-top: 50px;
-        z-index: -1;
-    }
-
+.modal{
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    padding-top: 50px;
 }
-@media(min-width:767px){
 
+footer dt{
+    color:rgb(140, 140, 140);
+}
+
+.addBtn:hover{
+    -webkit-animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+
+ @-webkit-keyframes shadow-pop-tl {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e;
+              box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e;
+      -webkit-transform: translateX(8px) translateY(8px);
+              transform: translateX(8px) translateY(8px);
+    }
+  }
+  @keyframes shadow-pop-tl {
+    0% {
+      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e;
+              box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e;
+      -webkit-transform: translateX(8px) translateY(8px);
+              transform: translateX(8px) translateY(8px);
+    }
+  }
+  
+
+
+
+@media(min-width:320px){
+    p{
+        font-size: 0.8em;
+    }
     .bg-overlay-1 {
         color:white;
         background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("bg-music.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
         background-position: center center;
         color: #fff;
         height: 400px;
@@ -209,7 +277,6 @@ footer{
         background-repeat: no-repeat;
         background-size: cover;
         background-position:center bottom;
-        background-attachment: fixed;
         background-repeat: no-repeat;
         color: #fff;
         height: 100%;
@@ -221,17 +288,38 @@ footer{
         background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("hopsin-4.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
         background-position:center top;
         color: #fff;
         height: 100%;
         padding-top: 50px;
         z-index: -1;
     }
+    .bg-overlay-4 {
+        color:white;
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0, 0.3)), url("record.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        color: #fff;
+        height: 400px;
+        padding-top: 50px;
+    }
+}
+  
+@media(min-width:767px){
+    p{
+        font-size: 1em;
+    }
+    .bg-overlay-1, 
+    .bg-overlay-2,
+     .bg-overlay-3,
+     .bg-overlay-4{
+        background-attachment: fixed;
+    } 
 }
 
 @media (min-width:1100px){
-    .card-deck{
+    .card-deck:nth-child(1n+2){
         padding-left:10rem;
         padding-right:10rem;
     }
